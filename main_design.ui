@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>838</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>998</width>
+    <height>838</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>998</width>
+    <height>838</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Age of Empires Replay</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/logo/icons/icon.ico</normaloff>:/logo/icons/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border: 2px solid #8f8f91;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+QPushButton:pressed{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2" rowstretch="3,1,1,1">
+        <property name="leftMargin">
+         <number>50</number>
+        </property>
+        <property name="rightMargin">
+         <number>50</number>
+        </property>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+            <pointsize>50</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>WELCOME</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButton_choose">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Choose File</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="pushButton_start">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>GO TO RESULTS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_download">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Download File</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <family>Segoe UI Black</family>
+           </font>
+          </property>
+          <property name="text">
+           <string>Choose or Download Game Data </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border: 2px solid #8f8f91;
+    border-radius: 6px;
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #f6f7fa, stop: 1 #dadbde);
+}
+
+QPushButton:pressed{
+background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #dadbde, stop: 1 #f6f7fa);
+}
+
+QCheckBox{
+	padding-left:18px;
+}
+QCheckBox::indicator {
+    width:25px;
+	height:25px;
+}
+QCheckBox::indicator:unchecked {
+    image: url(:/check/icons/unchecked.png);
+}
+QCheckBox::indicator:checked {
+    image: url(:/check/icons/checked.png);
+	width:30px;
+	height:30px;
+}
+#label_3,
+#label_4,
+#label_5,
+#label_6,
+#label_7,
+#label_8,
+#label_9,
+#label_10,
+#label_11 {
+background-color: rgb(58,64,85);
+border-radius: 7px;
+color:rgb(21, 180, 6);
+padding:5px
+}
+</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4" rowstretch="1,7,0,9,3">
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <item row="3" column="0">
+         <layout class="QGridLayout" name="gridLayout_3" rowstretch="1">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetFixedSize</enum>
+          </property>
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_6"/>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <family>Swis721 Blk BT</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>RESULTS</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_5" rowstretch="0,2,9">
+          <item row="1" column="3">
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>GOLD</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="6">
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>MILITARY UNITS</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="baseSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>FOOD</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="margin">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>WOOD</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>STONE</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="5">
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>VILLAGERS</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>PLAYER</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="7">
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>TOTAL SCORE</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="8">
+           <layout class="QVBoxLayout" name="verticalLayout_2"/>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <layout class="QGridLayout" name="gridLayout_7" rowstretch="1,1" columnstretch="1,2,1">
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_12">
+            <property name="font">
+             <font>
+              <family>Swis721 Blk BT</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>REPLAY</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1">
+           <layout class="QGridLayout" name="gridLayout_8" rowstretch="0,0,0,0,0,0,0" columnstretch="0,1,1,0">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="pushButton_x">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>X</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QPushButton" name="pushButton_4x">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>4X</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QPushButton" name="pushButton_2x">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>2X</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" rowspan="7" colspan="2">
+             <layout class="QGridLayout" name="gridLayout_9">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+             </layout>
+            </item>
+            <item row="3" column="2">
+             <widget class="QPushButton" name="pushButton_16x">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>16X</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QPushButton" name="pushButton_stop">
+              <property name="text">
+               <string>Stop</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
